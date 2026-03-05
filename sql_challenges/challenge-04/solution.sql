@@ -14,6 +14,7 @@ from   bricks b
 order  by shape, weight, brick_id;
 
 --Try it 2! :
+--For this exercise we only needed to complete the order by command, and since we want to have a running average based on weight, we can simply use the brick ID to have a cumulative value
 select b.brick_id, b.weight,
        round ( avg ( weight ) over (
          order by brick_id
@@ -22,6 +23,7 @@ from   bricks b
 order  by brick_id;
 
 --Try it 3! :
+--In this case, we only need to fill in the range to filter the results. And the FreeSQL exercise told us how far back or forward our range needed to be moved.
 select b.*,
        min ( colour ) over (
          order by brick_id
@@ -36,6 +38,8 @@ order  by weight;
 
 
 --Try it 4! :
+--We used partition by shape to filter the sum of weight based on the shape of the figures. But we did not wanted to create a partition for the running weight, so we only needed to use the command "order by" to have a cumulative value.
+--After that with only a conditional Where command we can filter the data.
 with totals as (
   select b.*,
          sum ( weight ) over (
