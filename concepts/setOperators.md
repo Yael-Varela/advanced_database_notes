@@ -2,7 +2,7 @@
 Set Operators
 
 ## My understanding
-Operators that combine the rwos of two or more selects into a single result table. 
+Operators that combine the rows of two or more selects into a single result table. Allowing the possibility of concatenation of queries. 
 
 
 ## Why it matters
