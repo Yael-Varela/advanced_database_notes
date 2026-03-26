@@ -4,8 +4,9 @@ Triggers
 ## My understanding
 It's a process that activates in response to a certain event.
 
+
 ## Why it matters
-Because it can automatize responses.
+Because it can automate responses, since performing certain actions on the database does not require manual intervention.
 
 
 ## Example
