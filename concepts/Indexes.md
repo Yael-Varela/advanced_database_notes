@@ -12,3 +12,5 @@ Partial index: It's created upon a subset of data in a table (like creating a in
 Since we can quickly retrieve and find specific data, as the size of the database increases, it becomes increasingly convenient to use indexes.
 
 ## Example
+-- Index created
+CREATE INDEX idx_pv_visit_date ON patient_visits(visit_date);
