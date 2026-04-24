@@ -99,7 +99,7 @@ END;
 Within the transaction, the time slot reservation and appointment record creation must be completed.
 Outside the transaction, the confirmation notification must be sent.
 
-This is because the time slot reservation and appointment creation must be completed simultaneously or the transaction will fail (either completly sucess or a failure).
+This is because the time slot reservation and appointment creation must be completed simultaneously or the transaction will fail (either completely success or a failure).
 Sending the notification is not critical for database consistency.
 
 -- Q2: Your stored procedure calls COMMIT at the end.
